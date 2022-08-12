@@ -14,19 +14,19 @@ var sum = addTwoNumbers(2, 2);
 console.log('sum', sum);
 
 function convertHoursToMinutes(hours) {
-  var result = hours;
+  var result = hours * 60;
   return result;
 }
 
-var Minutes = convertHoursToMinutes(2 * 60);
+var Minutes = convertHoursToMinutes(2);
 console.log(Minutes);
 
 function getGreeting(name) {
-  var result = name;
+  var result = name + ' World!"';
   return result;
 }
 
-var Hello = getGreeting('"Hello World!"');
+var Hello = getGreeting('"Hello');
 console.log(Hello);
 
 function addAndMultiplyBy5(num1, num2) {
@@ -54,11 +54,11 @@ var subtract = subtractTwoNumbers(22, 7);
 console.log(subtract);
 
 function getCircleCircumference(radius) {
-  var result = radius;
+  var result = radius * 2 * Math.PI;
   return result;
 }
 
-var circumfrerence = getCircleCircumference(5 * 2 * Math.PI);
+var circumfrerence = getCircleCircumference(5);
 console.log(circumfrerence);
 
 function getFullName(firstName, lastName) {
